@@ -1,17 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Kanit", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #ffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.my_bg_image {
+  background-image: url(https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/vecteezy_abstract-blue-background_ts1120.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.my_bg_blue {
+  background: linear-gradient(360deg, #0f165f, #1f3cc0);
+}
+
+.my_input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #052f9f80;
+  border: none;
+  border-radius: 8px;
+  font-weight: 100;
+  color: white;
+  padding: 7px;
+  padding-left: 35px !important;
+  width: 100%;
+  border: 1px solid #aec9ff;
+  box-shadow: 3px 3px 5px black;
+}
+
+.my_but_blue_light {
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 10px;
+  border-radius: 10px;
+  font-weight: 200;
+  color: #e5e5e5;
+  background-image: linear-gradient(0deg, #1c6099, #246fad);
+  box-shadow: inset 0 0 0 2px #51a2d4;
+}
+
+.my_but_orange {
+  font-size: 0.9rem;
+  position: relative;
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.5));
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(0deg, #e76f2a, #e76f2a);
+  box-shadow: inset 0 0 0 2px #feca6b, 0 0 10px #f29e11;
+  transition: -webkit-filter 0.2s;
+  transition: filter 0.2s;
+  transition: filter 0.2s, -webkit-filter 0.2s;
+  line-height: 22px;
+  transition: all 0.3s;
+  border: none;
+  padding: 7px 10px;
+  color: #e5e5e5;
+}
+.my_card_blue {
+  height: 90px;
+  width: 65px;
+  padding: 2px;
+  background-origin: border-box;
+  background-clip: content-box,border-box;
+  background-image: linear-gradient(181deg, #336cf2, #222bcb),
+    linear-gradient(180deg, #3269f0, #3a74eb);
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  transition: all 0.3s;
+  color: white;
+  cursor: pointer;
+}
+.my_card_blue:hover {
+  background-image: linear-gradient(181deg, #1c1e83, #3364ef),
+    linear-gradient(180deg, #1e2087, #fff193);
+}
+.my_sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  background: linear-gradient(85deg, #0b1150, #03036b8c);
+  padding-top: 85px;
+  transition: all 0.3s;
+}
+
+.my_shadow {
+  box-shadow: 0 5px 10px #000000b0;
+}
+
+.my_bg_blue_card {
+  background: radial-gradient(
+    100% 100% at 50% 0,
+    #3170d1 0,
+    #3035cd 44%,
+    #1623ab 100%
+  );
+  transition: 0.3s;
+}
+.my_bg_blue_card:hover {
+  background: radial-gradient(
+    100% 100% at 50% 0,
+    #66c2ff 0,
+    #4571ff 44%,
+    #242ebf 100%
+  );
+  transition: 0.3s;
+  text-shadow: 0 0 5px white, 0 0 25px white, 0 0 35px white;
+}
+
+.my_text_shadow_white {
+  text-shadow: 0 0 5px white, 0 0 25px white, 0 0 35px white;
 }
