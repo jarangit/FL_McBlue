@@ -74,7 +74,7 @@ body {
   width: 65px;
   padding: 2px;
   background-origin: border-box;
-  background-clip: content-box,border-box;
+  background-clip: content-box, border-box;
   background-image: linear-gradient(181deg, #336cf2, #222bcb),
     linear-gradient(180deg, #3269f0, #3a74eb);
   border-bottom-right-radius: 15px;
@@ -131,4 +131,21 @@ body {
 
 .my_text_shadow_white {
   text-shadow: 0 0 5px white, 0 0 25px white, 0 0 35px white;
+}
+
+.my_text_slide {
+  position: absolute;
+  white-space: nowrap;
+  animation: floatText 5s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes floatText{
+  from {
+    left: 00%;
+  }
+
+  to {
+    /* left: auto; */
+    left: 100%;
+  }
 }
