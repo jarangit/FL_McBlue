@@ -11,6 +11,13 @@ body {
   color: #ffff;
 }
 
+.myContainer {
+  width: 100%;
+  max-width: 1300px;
+  margin-left: 200px;
+  padding: 5%;
+  min-height: 100vh;
+}
 .my_bg_image {
   background-image: url(https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/vecteezy_abstract-blue-background_ts1120.jpg);
   background-position: center center;
@@ -139,7 +146,7 @@ body {
   animation: floatText 5s infinite alternate ease-in-out;
 }
 
-@-webkit-keyframes floatText{
+@-webkit-keyframes floatText {
   from {
     left: 00%;
   }

@@ -11,4 +11,7 @@ export const IMAGE_STORE = {
   banner3:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/Untitled-1.jpg`,
   banner4:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/02.jpg`,
   banner5:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/04.jpg`,
+  bg_welcome:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/review-index-cover-bg.39f58f66.jpg`,
+  logo:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/logo.png`,
+  women:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/wm-casino-info-banner-1-2.png`,
 }

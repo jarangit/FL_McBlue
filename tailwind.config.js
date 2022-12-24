@@ -23,8 +23,12 @@ module.exports = {
     colors: {
       "blue": {
         light: "#3a74eb",
-        DEFAULT: "#1f3cc0"
-      }
+        DEFAULT: "#1f3cc0",
+        dark:"#404a8d"
+      },
+      "black": {
+        DEFAULT: "#000",
+      },
     }
   },
   plugins: [],

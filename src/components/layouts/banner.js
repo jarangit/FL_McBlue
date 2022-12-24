@@ -13,10 +13,10 @@ const Banner = () => {
     `
   }
   function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
+    const { onClick } = props;
     return (
       <div
-      className="slick-arrow absolute top-20 right-5 drop-shadow-lg cursor-pointer"
+        className="slick-arrow absolute top-20 right-5 drop-shadow-lg cursor-pointer"
         onClick={onClick}
       >
         <IoIosArrowForward size={40} />
@@ -25,10 +25,10 @@ const Banner = () => {
   }
 
   function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
+    const { onClick } = props;
     return (
       <div
-      className="slick-arrow absolute top-20 left-5 drop-shadow-lg z-10 cursor-pointer"
+        className="slick-arrow absolute top-20 left-5 drop-shadow-lg z-10 cursor-pointer"
         onClick={onClick}
       >
         <IoIosArrowBack size={40} />
