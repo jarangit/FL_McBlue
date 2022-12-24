@@ -5,7 +5,7 @@ import { VIDEO_STORE } from '../../constants/videoStores'
 const Welcome = () => {
   return (
     <div className={`border-2 border-blue-dark rounded-3xl bg-[url('https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/3661943.jpg')] p-2 bg-no-repeat bg-center object-cover w-full h-full`}>
-      <div className='relative overflow-hidden'>
+      <div className='relative overflow-hidden rounded-3xl'>
         <img src={IMAGE_STORE.bg_welcome} alt="" style={{ objectFit: "cover", }} className="object-contain w-full h-[240px] rounded-3xl" />
         <div className='absolute top-0 flex flex-col gap-3 justify-center items-center text-center px-[200px] backdrop-opacity-10 backdrop-invert bg-black/50 h-full'>
           <div>

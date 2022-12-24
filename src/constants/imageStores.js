@@ -14,4 +14,7 @@ export const IMAGE_STORE = {
   bg_welcome:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/review-index-cover-bg.39f58f66.jpg`,
   logo:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/logo.png`,
   women:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/wm-casino-info-banner-1-2.png`,
+  sportCard:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/1-sbobet.png`,
+  storeGame:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/1-allbet.png`,
+  hotGameItem:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/1-joker.png`,
 }
