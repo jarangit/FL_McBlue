@@ -8,9 +8,7 @@ const Layout = ({ children }) => {
       <Menu />
       <SideMenu />
       <TextSlide />
-      <div className='pt-[120px] ml-[200px] w-full max-w-[1300px] p-3 min-h-screen'>
         {children}
-      </div>
     </div>
   )
 }

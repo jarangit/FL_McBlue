@@ -1,5 +1,5 @@
 import React from 'react'
-import { IMAGE_STORE } from '../../constants/imageStroe'
+import { IMAGE_STORE } from '../../constants/imageStores'
 const dataList = [
   {
     img: IMAGE_STORE.sport,
