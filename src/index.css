@@ -11,16 +11,21 @@ body {
   color: #ffff;
 }
 
-.myContainer {
+.myContainerTop {
   width: 100%;
   max-width: 1300px;
   margin-left: 200px;
   padding: 5%;
   min-height: 100vh;
 }
+.myContainer {
+  width: 100%;
+  max-width: 1300px;
+  padding: 2%;
+}
 .my_bg_image {
   background-image: url(https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/vecteezy_abstract-blue-background_ts1120.jpg);
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -161,8 +166,32 @@ body {
   background-color: transparent;
   background-image: linear-gradient(90deg, #3e56ff 0%, #d52c5600 40%);
 }
-
-.my_hover_expend:hover{
-  transition: all .2s ;
+.my_hover_expend {
+  transform: scale(1);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.my_hover_expend:hover {
   transform: scale(1.05);
+}
+
+.my_bg_navy {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #11275f 0%, #060606 100%);
+}
+.my_gold_line {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3px;
+  z-index: 9;
+  background: linear-gradient(
+    334deg,
+    transparent,
+    #e4a708 30%,
+    #feffba 70%,
+    transparent
+  );
 }

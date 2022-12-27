@@ -29,6 +29,9 @@ module.exports = {
       "black": {
         DEFAULT: "#000",
       },
+      "yellow": {
+        DEFAULT: "#F0E664",
+      },
     }
   },
   plugins: [],

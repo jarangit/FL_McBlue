@@ -17,4 +17,9 @@ export const IMAGE_STORE = {
   sportCard:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/1-sbobet.png`,
   storeGame:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/1-allbet.png`,
   hotGameItem:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/1-joker.png`,
+  slot2GameItem:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/hot-game4-1.png`,
+  bg_step:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/bg-33.jpg`,
+  step_icon_item:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/03/EZ-Casino-%E0%B9%81%E0%B8%97%E0%B8%87%E0%B8%9F%E0%B8%B8%E0%B8%95%E0%B8%9A%E0%B8%AD%E0%B8%A5%E0%B8%9E%E0%B8%99%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C-%E0%B8%9A%E0%B8%B2%E0%B8%AA%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95%E0%B8%9A%E0%B8%AD%E0%B8%A5-E-Sport.png`,
+  step_button:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/ezgif-2-c6a36a52bb.gif`,
+  promotion_item:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/ads01.jpg`,
 }
