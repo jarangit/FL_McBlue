@@ -22,4 +22,10 @@ export const IMAGE_STORE = {
   step_icon_item:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/03/EZ-Casino-%E0%B9%81%E0%B8%97%E0%B8%87%E0%B8%9F%E0%B8%B8%E0%B8%95%E0%B8%9A%E0%B8%AD%E0%B8%A5%E0%B8%9E%E0%B8%99%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C-%E0%B8%9A%E0%B8%B2%E0%B8%AA%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95%E0%B8%9A%E0%B8%AD%E0%B8%A5-E-Sport.png`,
   step_button:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/ezgif-2-c6a36a52bb.gif`,
   promotion_item:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/ads01.jpg`,
+  bg_step2:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/Artboard-3.jpg`,
+  step_casino:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/women-artgraphic.png`,
+  step2_item:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/test02-1.png`,
+  why_col:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/file.png`,
+  finger:`https://s.w.org/images/core/emoji/14.0.0/svg/1f449.svg`,
+  blog_item:`https://ideabet.org/theme/mcblue/wp-content/uploads/2021/08/batch_img20200420074597-768x419.jpg`,
 }

@@ -8,6 +8,9 @@ import SlotGame from './components/sections/slotGame';
 import SlotGame2 from './components/sections/slotGame2';
 import StepSection from './components/sections/step';
 import PromotionsSection from './components/sections/promotions';
+import Step2Section from './components/sections/step2';
+import WhySection from './components/sections/why';
+import BlogSection from './components/sections/blog';
 
 function App() {
   const styled = {
@@ -30,6 +33,9 @@ function App() {
       <div className={`${styled.fullWidth}`}>
         <StepSection />
         <PromotionsSection />
+        <Step2Section />
+        <WhySection />
+        <BlogSection/>
       </div>
     </Layout>
   );

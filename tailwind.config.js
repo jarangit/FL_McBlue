@@ -31,6 +31,7 @@ module.exports = {
       },
       "yellow": {
         DEFAULT: "#F0E664",
+        dark:"#FFD71D"
       },
     }
   },
