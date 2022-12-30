@@ -6,7 +6,7 @@ const Banner = () => {
 
   const styled = {
     imageItem: `
-      mx-auto flex justify-center rounded-2xl overflow-hidden w-fit h-[230px] max-w-[650px]
+      mx-auto flex justify-center  rounded-md lg:rounded-2xl overflow-hidden  h-[120px] lg:h-[230px] max-w-[650px]
     `,
     boxImage: `
       px-3
@@ -16,7 +16,7 @@ const Banner = () => {
     const { onClick } = props;
     return (
       <div
-        className="slick-arrow absolute top-20 right-5 drop-shadow-lg cursor-pointer"
+        className="slick-arrow absolute top-10 lg:top-20  right-5 drop-shadow-lg cursor-pointer"
         onClick={onClick}
       >
         <IoIosArrowForward size={40} />
@@ -28,7 +28,7 @@ const Banner = () => {
     const { onClick } = props;
     return (
       <div
-        className="slick-arrow absolute top-20 left-5 drop-shadow-lg z-10 cursor-pointer"
+        className="slick-arrow absolute top-10 lg:top-20 left-5 drop-shadow-lg z-10 cursor-pointer"
         onClick={onClick}
       >
         <IoIosArrowBack size={40} />
@@ -47,7 +47,29 @@ const Banner = () => {
     dots: true,
     autoplay: true,
     nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          dots: false,
+
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   };
   const {
     banner1,
@@ -57,7 +79,7 @@ const Banner = () => {
     banner5,
   } = IMAGE_STORE
   return (
-    <div>
+    <div className='mb-6'>
       <Slider {...settings}>
         <div className={`${styled.boxImage}`}>
           <div className={`${styled.imageItem}`}>

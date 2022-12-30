@@ -24,7 +24,7 @@ const dataList = [
 ]
 const SideMenu = () => {
   return (
-    <div className='my_sidebar px-3 relative z-20'>
+    <div className='my_sidebar px-3 relative z-20 hidden md:block'>
       <div className={`flex flex-col gap-3`}>
         {dataList.map((item, key) => (
           <div className='flex items-center gap-3 my_bg_blue_card rounded-[20px] py-1 px-3 border-[1px] text-sm border-blue-light my_shadow cursor-pointer '>

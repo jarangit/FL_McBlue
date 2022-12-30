@@ -17,7 +17,7 @@ import Sponsor from './components/sections/sponsor';
 function App() {
   const styled = {
     fullWidth: `
-    ml-[200px] w-full max-w-[1320px]
+    ml-0 md:ml-[200px] w-full max-w-[1320px]
     `
   }
   return (
@@ -25,7 +25,7 @@ function App() {
       <div className={`${styled.fullWidth}  pt-[120px]`}>
         <Banner />
       </div>
-      <div className='myContainerTop'>
+      <div className='myContainerTop lg:ml-[200px]'>
         <Welcome />
         <SportGame />
         <CasinoGame />

@@ -14,14 +14,13 @@ body {
 .myContainerTop {
   width: 100%;
   max-width: 1200px;
-  margin-left: 200px;
   padding: 5%;
   min-height: 100vh;
 }
 .myContainer {
   width: 100%;
   max-width: 1200px;
-  padding:  2% 5%;
+  padding:  4% 5%;
 }
 .my_bg_image {
   background-image: url(https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/vecteezy_abstract-blue-background_ts1120.jpg);

@@ -7,12 +7,12 @@ const Step2Section = () => {
       <div className='my_gold_line' />
 
       <div className='myContainer'>
-        <div className='grid grid-cols-2'>
-          <div>
+        <div className='grid grid-cols-1 lg:grid-cols-2'>
+          <div className='order-2 lg:order-1'>
             <div className='border-2 border-blue-light p-3 rounded-2xl flex flex-col gap-3 backdrop-saturate-200 bg-black/70 max-w-[450px] text-sm '>
               <div className={`text-3xl font-bold`}>
                 <span className='text-blue-light'>NameWeb </span>
-                 คาสิโนที่ใส่ใจคุณ
+                คาสิโนที่ใส่ใจคุณ
                 สนุกได้ทั้งแนวตั้งและแนวนอน</div>
               <div>
                 NameWeb  ใส่ใจทุกรายละเอียด ไม่ว่าคุณจะเล่นผ่านเว็บไซต์ หรือ แอพในมือถือ ต่างได้ประสบการณ์สุดพิเศษ ที่ใช้งานง่าย เสถียร์ ให้คุณมีเวลา และ ทำกำไรปราศจากความกังวลท่ามกลางเว็บ NameWeb Casino มากมายเล่นทั้งที ต้องเล่นเว็บตรง</div>
@@ -35,8 +35,10 @@ const Step2Section = () => {
               </div>
             </div>
           </div>
-          <div>
-            <img src={IMAGE_STORE.step_casino} alt="" />
+          <div className='order-1 lg:order-2'>
+            <div className=''>
+              <img src={IMAGE_STORE.step_casino} alt="" />
+            </div>
           </div>
         </div>
       </div>

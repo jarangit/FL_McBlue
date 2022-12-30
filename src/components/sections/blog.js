@@ -7,7 +7,7 @@ const BlogSection = () => {
       <div className='my_gold_line' />
       <div className='myContainer'>
         <div className='flex justify-between'>
-          <div className='text-2xl'>บทความเกี่ยวกับคาสิโนออนไลน์</div>
+          <div className='lg:text-2xl text-lg'>บทความเกี่ยวกับคาสิโนออนไลน์</div>
           <div className='flex items-center gap-3 text-yellow-dark cursor-pointer'>
             <div>ดูทั้งหมด</div>
             <div>

@@ -9,7 +9,7 @@ const PromotionsSection = () => {
         <div className='text-3xl font-bold mb-6 text-center'>โปรโมชั่นสุดพิเศษ</div>
 
         {/* list */}
-        <div className='grid grid-cols-1 lg:grid-cols-4 gap-4'>
+        <div className='grid grid-cols-2 lg:grid-cols-4 gap-4'>
           <div className={`my_hover_expend`}>
             <img src={IMAGE_STORE.promotion_item} alt="" />
           </div>
