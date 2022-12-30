@@ -3,7 +3,7 @@ import { IMAGE_STORE } from '../../constants/imageStores'
 import { BsArrowRightCircle } from 'react-icons/bs'
 const BlogSection = () => {
   return (
-    <div className={`relative`}>
+    <div className={`relative bg-[url(https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/vecteezy_abstract-blue-background_ts1120.jpg)]`}>
       <div className='my_gold_line' />
       <div className='myContainer'>
         <div className='flex justify-between'>

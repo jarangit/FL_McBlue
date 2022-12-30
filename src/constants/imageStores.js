@@ -28,4 +28,7 @@ export const IMAGE_STORE = {
   why_col:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/file.png`,
   finger:`https://s.w.org/images/core/emoji/14.0.0/svg/1f449.svg`,
   blog_item:`https://ideabet.org/theme/mcblue/wp-content/uploads/2021/08/batch_img20200420074597-768x419.jpg`,
+  sponsor1:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/03/dream-gaming.d993e67.png`,
+  sponsor2:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/03/ameba.dea3fdf.png`,
+  sponsor3:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/03/ambbet.1d53780.png`,
 }

@@ -11,6 +11,8 @@ import PromotionsSection from './components/sections/promotions';
 import Step2Section from './components/sections/step2';
 import WhySection from './components/sections/why';
 import BlogSection from './components/sections/blog';
+import Question from './components/sections/question';
+import Sponsor from './components/sections/sponsor';
 
 function App() {
   const styled = {
@@ -35,7 +37,9 @@ function App() {
         <PromotionsSection />
         <Step2Section />
         <WhySection />
-        <BlogSection/>
+        <BlogSection />
+        <Question />
+        <Sponsor />
       </div>
     </Layout>
   );
