@@ -31,4 +31,6 @@ export const IMAGE_STORE = {
   sponsor1:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/03/dream-gaming.d993e67.png`,
   sponsor2:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/03/ameba.dea3fdf.png`,
   sponsor3:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/03/ambbet.1d53780.png`,
+  menuLoginIcon:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/03/ic-menu-login-animate-1.png`,
+  midIconMenuMB:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/3123.png`,
 }

@@ -4,6 +4,7 @@ import SideMenu from './sideMenu'
 import TextSlide from '../items/textSlide'
 import Footer from './footer'
 import MenuModal from '../modal/menuModal'
+import BottomMenu from './bottomMenu'
 const Layout = ({ children }) => {
   const [showMenuMB, setShowMenuMB] = useState(false)
   useEffect(() => {
@@ -18,6 +19,7 @@ const Layout = ({ children }) => {
       <TextSlide />
       {children}
       <Footer />
+      <BottomMenu/>
     </div>
   )
 }
