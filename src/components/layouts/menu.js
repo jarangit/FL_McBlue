@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FaUserAlt, FaLock } from 'react-icons/fa'
-const Menu = () => {
+import { AiOutlineMenu } from 'react-icons/ai'
+const Menu = ({ setShowMenuMB }) => {
   const [showCardMenu, setShowCardMenu] = useState(false)
 
   useEffect(() => {
@@ -9,9 +10,14 @@ const Menu = () => {
     }, 300);
   }, [])
   return (
-    <div className={`h-[75px] my_bg_blue drop-shadow-xl flex items-center justify-between px-6 fixed w-full z-50`}>
-      <div className='w-24'>
-        <img src="https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/logo.png" alt="" width={170} />
+    <div className={`h-[75px] my_bg_blue drop-shadow-xl flex items-center justify-between px-3 md:px-6 fixed w-full z-50`}>
+      <div className='flex gap-2 items-center'>
+        <div className='md:hidden' onClick={() => setShowMenuMB(true)}>
+          <AiOutlineMenu size={30} />
+        </div>
+        <div className='w-24'>
+          <img src="https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/logo.png" alt="" width={170} />
+        </div>
       </div>
 
       {/* menu right */}
@@ -49,11 +55,11 @@ const Menu = () => {
           </div>
         </div>
         <div>
-          <button className={`my_but_blue_light !p-1 !rounded-lg`}>เข้าสู่ระบบ</button>
+          <button className={`my_but_blue_light !p-1 !rounded-lg !text-xs md:text-md`}>เข้าสู่ระบบ</button>
         </div>
 
         <div>
-          <button className={`my_but_orange !p-1 !rounded-lg`}>สมัครสมาชิก</button>
+          <button className={`my_but_orange !p-1 !rounded-lg !text-xs md:text-md`}>สมัครสมาชิก</button>
         </div>
       </div>
     </div>

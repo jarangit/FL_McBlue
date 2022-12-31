@@ -33,6 +33,9 @@ module.exports = {
         DEFAULT: "#F0E664",
         dark:"#FFD71D"
       },
+      "white": {
+        DEFAULT: "#ffff",
+      },
     }
   },
   plugins: [],
