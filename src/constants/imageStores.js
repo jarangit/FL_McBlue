@@ -32,5 +32,8 @@ export const IMAGE_STORE = {
   sponsor2:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/03/ameba.dea3fdf.png`,
   sponsor3:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/03/ambbet.1d53780.png`,
   menuLoginIcon:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/03/ic-menu-login-animate-1.png`,
+  menuLineIcon:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/03/support.png`,
+  menuGiftIcon:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/03/tab_promotion-1.png`,
+  menuUserIcon:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/03/ic-menu-register.png`,
   midIconMenuMB:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/3123.png`,
 }
