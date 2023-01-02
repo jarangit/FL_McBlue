@@ -13,13 +13,13 @@ body {
 
 .myContainerTop {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   padding: 5% 3%;
   min-height: 100vh;
 }
 .myContainer {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   padding: 4% 3%;
 }
 .my_bg_image {

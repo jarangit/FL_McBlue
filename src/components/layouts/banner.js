@@ -52,7 +52,7 @@ const Banner = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           dots: false,
 
         }

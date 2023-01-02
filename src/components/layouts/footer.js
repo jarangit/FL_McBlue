@@ -3,7 +3,7 @@ import { IMAGE_STORE } from '../../constants/imageStores'
 import { FaDotCircle } from 'react-icons/fa'
 const Footer = () => {
   return (
-    <div className='ml-0 lg:ml-[200px] w-full max-w-[1320px]  backdrop-sepia-0 bg-blue/90'>
+    <div className='ml-0 md:pl-[200px] w-full max-w-[1320px]  backdrop-sepia-0 bg-blue/90'>
       <div className='myContainer'>
         <div className='grid grid-cols-1 lg:grid-cols-5 gap-6'>
           <div className='flex flex-col text-center gap-3 lg:col-span-2 justify-center items-center'>

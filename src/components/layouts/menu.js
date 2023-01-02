@@ -22,7 +22,7 @@ const Menu = ({ setShowMenuMB }) => {
 
       {/* menu right */}
       <div className={`flex items-center gap-2 `}>
-        <div className={`hidden md:flex gap-2  relative overflow-hidden transition-all duration-700  ${showCardMenu ? "top-0" : "-top-24"}`}>
+        <div className={`hidden lg:flex gap-2  relative overflow-hidden transition-all duration-700  ${showCardMenu ? "top-0" : "-top-24"}`}>
           <div className={`my_card_blue`}>
             <div className=' mx-auto'>
               <img src="https://ideabet.org/theme/mcblue/wp-content/uploads/2022/03/download-1.png" alt="" width={45} />

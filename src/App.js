@@ -18,7 +18,7 @@ import SideMenuMB from './components/layouts/sideMenuMB';
 function App() {
   const styled = {
     fullWidth: `
-    ml-0 md:ml-[200px] w-full max-w-[1320px]
+    ml-0 md:pl-[200px] w-full max-w-[1620px]
     `
   }
   return (
@@ -26,20 +26,20 @@ function App() {
       <div className={`${styled.fullWidth}  pt-[120px]`}>
         <Banner />
       </div>
-      <div className='myContainerTop lg:ml-[200px] hidden md:block'>
+      <div className='myContainerTop md:pl-[220px] hidden md:block'>
         <Welcome />
         <SportGame />
         <CasinoGame />
         <SlotGame />
         <SlotGame2 />
       </div>
-      <div className='myContainerTop lg:ml-[200px] md:hidden'>
+      <div className='myContainerTop md:pl-[200px] md:hidden'>
         <div className='grid grid-cols-3 gap-2'>
           <div>
             <SideMenuMB/>
           </div>
           <div className='col-span-2 max-h-screen overflow-scroll no-scrollbar'>
-            <div className='myContainerTop lg:ml-[200px] !px-0'>
+            <div className='myContainerTop md:pl-[200px] !px-0'>
               <Welcome />
               <SportGame />
               <CasinoGame />
