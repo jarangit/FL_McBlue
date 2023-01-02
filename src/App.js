@@ -38,7 +38,7 @@ function App() {
           <div>
             <SideMenuMB/>
           </div>
-          <div className='col-span-2 max-h-screen overflow-scroll'>
+          <div className='col-span-2 max-h-screen overflow-scroll no-scrollbar'>
             <div className='myContainerTop lg:ml-[200px] !px-0'>
               <Welcome />
               <SportGame />
