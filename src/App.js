@@ -13,6 +13,7 @@ import WhySection from './components/sections/why';
 import BlogSection from './components/sections/blog';
 import Question from './components/sections/question';
 import Sponsor from './components/sections/sponsor';
+import SideMenuMB from './components/layouts/sideMenuMB';
 
 function App() {
   const styled = {
@@ -25,12 +26,28 @@ function App() {
       <div className={`${styled.fullWidth}  pt-[120px]`}>
         <Banner />
       </div>
-      <div className='myContainerTop lg:ml-[200px]'>
+      <div className='myContainerTop lg:ml-[200px] hidden md:block'>
         <Welcome />
         <SportGame />
         <CasinoGame />
         <SlotGame />
         <SlotGame2 />
+      </div>
+      <div className='myContainerTop lg:ml-[200px] md:hidden'>
+        <div className='grid grid-cols-3 gap-2'>
+          <div>
+            <SideMenuMB/>
+          </div>
+          <div className='col-span-2'>
+            <div className='myContainerTop lg:ml-[200px] !px-0'>
+              <Welcome />
+              <SportGame />
+              <CasinoGame />
+              <SlotGame />
+              <SlotGame2 />
+            </div>
+          </div>
+        </div>
       </div>
       <div className={`${styled.fullWidth}`}>
         <StepSection />

@@ -6,7 +6,7 @@ const LabelTitle = ({ image, text }) => {
       <div className={`absolute left-2`}>
         <img src={image} alt="" width={'60px'} />
       </div>
-      <div className='text-2xl pl-20'>
+      <div className='text-md md:text-2xl pl-20'>
         {text}
       </div>
     </div>

@@ -4,7 +4,7 @@ import LabelTitle from '../label/labelTitle'
 
 const SportGame = () => {
   return (
-    <div>
+    <div className=''>
       <LabelTitle
         image={IMAGE_STORE.sport}
         text="ค่ายเกมกีฬา"
