@@ -3,7 +3,7 @@ import { IMAGE_STORE } from '../../constants/imageStores'
 
 const BottomMenu = () => {
   return (
-    <div className='fixed  w-full  -bottom-2 z-[100] md:hidden !text-[1px]' id="account-actions-mobile">
+    <div className='fixed  w-full  -bottom-2 z-[100] md:hidden !text-xs' id="account-actions-mobile">
       <div className='flex  justify-between relative'>
         <div className='flex  gap-3 border-t p-3 my_bg_blue_card rounded-2xl pb-6 z-20 pr-1'>
           <div className='w-[60px] flex flex-col items-center'>
