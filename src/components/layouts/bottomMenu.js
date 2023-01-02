@@ -3,7 +3,7 @@ import { IMAGE_STORE } from '../../constants/imageStores'
 
 const BottomMenu = () => {
   return (
-    <div className='fixed  w-full  -bottom-5 z-[100] md:hidden !text-[1px]' id="account-actions-mobile">
+    <div className='fixed  w-full  -bottom-2 z-[100] md:hidden !text-[1px]' id="account-actions-mobile">
       <div className='flex  justify-between relative'>
         <div className='flex  gap-3 border-t p-3 my_bg_blue_card rounded-2xl pb-6 z-20 pr-1'>
           <div className='w-[60px] flex flex-col items-center'>
@@ -22,8 +22,8 @@ const BottomMenu = () => {
         {/* <span className=' w-full absolute  bottom-5 my_bg_blue_card z-10 h-24 bottom-10'>
           <div className='w-6 h-6 bg-transparent'></div>
         </span> */}
-        <div className=' absolute bottom-4 overflow-hidden w-full h-16'>
-          <div className='flex justify-center w-full items-center h-32 overflow-hidden relative bottom-14'>
+        <div className=' absolute bottom-3  w-full h-16'>
+          <div className='flex justify-center overflow-hidden w-full items-end h-24 relative bottom-0'>
             <div className=" mx-auto ">
               <div className="fixed-holder"><div className="fixed-div"></div></div>
             </div>
@@ -37,7 +37,7 @@ const BottomMenu = () => {
             <div className='text-xs relative -top-1'>สิทธิพิเศษ</div>
           </div>
         </div>
-        <div className='flex  gap-3 border-t p-3 my_bg_blue_card rounded-2xl pb-6 z-20 pl-3'>
+        <div className='flex  gap-3 border-t p-3 my_bg_blue_card rounded-2xl pb-6 z-20 pl-1'>
         <div className='w-[60px] flex flex-col items-center'>
             <div>
               <img src={IMAGE_STORE.menuGiftIcon} alt="" width={40} />
