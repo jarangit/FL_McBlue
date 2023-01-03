@@ -14,15 +14,26 @@ import BlogSection from './components/sections/blog';
 import Question from './components/sections/question';
 import Sponsor from './components/sections/sponsor';
 import SideMenuMB from './components/layouts/sideMenuMB';
-
+import Loading from './components/items/loading';
+import { useState, useEffect } from 'react'
 function App() {
+  const [loading, setLoading] = useState(false)
   const styled = {
     fullWidth: `
     ml-0 md:pl-[200px] w-full max-w-[1620px]
     `
   }
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000);
+  }, [])
+
   return (
     <Layout>
+      {loading && <Loading />}
       <div className={`${styled.fullWidth}  pt-[120px]`}>
         <Banner />
       </div>
@@ -36,7 +47,7 @@ function App() {
       <div className='myContainerTop md:pl-[200px] md:hidden'>
         <div className='grid grid-cols-3 gap-2'>
           <div>
-            <SideMenuMB/>
+            <SideMenuMB />
           </div>
           <div className='col-span-2 max-h-screen overflow-scroll no-scrollbar'>
             <div className='myContainerTop md:pl-[200px] !px-0'>
