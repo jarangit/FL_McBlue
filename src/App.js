@@ -44,12 +44,12 @@ function App() {
         <SlotGame />
         <SlotGame2 />
       </div>
-      <div className='myContainerTop md:pl-[200px] md:hidden'>
+      <div className='myContainerTop md:pl-[200px] md:hidden '>
         <div className='grid grid-cols-3 gap-2'>
-          <div>
+          <div className=''>
             <SideMenuMB />
           </div>
-          <div className='col-span-2 max-h-screen overflow-scroll no-scrollbar'>
+          <div className='col-span-2'>
             <div className='myContainerTop md:pl-[200px] !px-0'>
               <Welcome />
               <SportGame />
