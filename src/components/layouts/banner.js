@@ -40,7 +40,7 @@ const Banner = () => {
     className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "300px",
+    centerPadding: "350px",
     slidesToShow: 1,
     speed: 500,
     lazyLoad: true,
@@ -48,7 +48,30 @@ const Banner = () => {
     autoplay: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    adaptiveHeight: true,
+    customPaging: function(i) {
+      console.log(i)
+      return (
+        <div className='w-2 h-2 bg-[#9cb1eb] rounded-full mt-1 opacity-25 transition-all'/>
+      );
+    },
     responsive: [
+      {
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+          centerPadding: "250px",
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1,
+          dots: false,
+          centerPadding: "150px",
+        }
+      },
       {
         breakpoint: 1024,
         settings: {
@@ -82,7 +105,7 @@ const Banner = () => {
     banner5,
   } = IMAGE_STORE
   return (
-    <div className='mb-6'>
+    <div className=''>
       <Slider {...settings}>
         <div className={`${styled.boxImage}`}>
           <div className={`${styled.imageItem}`}>

@@ -332,3 +332,13 @@ body {
   background: hsla(0, 0%, 100%, .3);
   border-radius: 0 20px 20px 0;
 }
+
+li.slick-active {
+  opacity: 1;
+  background: #9cb1eb;
+  border-radius: 100%;
+  scale: 0.75;
+}
+.slick-dots{
+  transition: all;
+}
