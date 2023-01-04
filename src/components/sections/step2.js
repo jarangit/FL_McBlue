@@ -9,7 +9,7 @@ const Step2Section = () => {
       <div className='myContainer'>
         <div className='grid grid-cols-1 lg:grid-cols-2'>
           <div className='order-2 lg:order-1'>
-            <div className='border-2 border-blue-light p-3 rounded-2xl flex flex-col gap-3 backdrop-saturate-200 bg-black/70 max-w-[450px] text-sm '>
+            <div className='border-2 border-blue-light p-3 rounded-2xl flex flex-col gap-3 backdrop-saturate-200 bg-black/70 max-w-full lg:max-w-[450px] text-sm '>
               <div className={`text-3xl font-bold`}>
                 <span className='text-blue-light'>NameWeb </span>
                 คาสิโนที่ใส่ใจคุณ

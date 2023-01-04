@@ -15,7 +15,7 @@ const Welcome = () => {
             <div className='font-bold text-lg'>
               ยินดีต้อนรับเข้าสู่ MCBLUE
             </div>
-            <div className='text-xs md:text-md'>
+            <div className='text-xs lg:text-xl '>
               NameWeb สนุกกับสล็อตเกมแตกง่ยบนค่ายเกมคาสิโนออนไลน์ชั้นนำระดับประเทศในปี 2022
               บนค่ายดังยอดฮิตตลอดการอย่าง Evoplay, Joker, PG Slot และอื่นๆ อีกมากมาย
             </div>

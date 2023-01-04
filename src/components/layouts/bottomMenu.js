@@ -25,7 +25,7 @@ const BottomMenu = () => {
         <div className=' absolute bottom-3  w-full h-16'>
           <div className='flex justify-center overflow-hidden w-full items-end h-24 relative bottom-0'>
             <div className=" mx-auto ">
-              <div className="fixed-holder"><div className="fixed-div"></div></div>
+              <div className="fixed-holder"><div className="fixed-div "></div></div>
             </div>
           </div>
         </div>
