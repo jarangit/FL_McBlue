@@ -40,8 +40,8 @@ const Banner = () => {
     className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 2,
+    centerPadding: "300px",
+    slidesToShow: 1,
     speed: 500,
     lazyLoad: true,
     dots: true,
@@ -52,8 +52,9 @@ const Banner = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           dots: false,
+          centerPadding: "100px",
 
         }
       },
@@ -61,12 +62,14 @@ const Banner = () => {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
+          centerPadding: "40px",
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
+          centerPadding: "40px",
         }
       }
     ]
