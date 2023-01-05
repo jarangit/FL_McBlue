@@ -15,9 +15,11 @@ const Menu = ({ setShowMenuMB }) => {
         <div className='md:hidden' onClick={() => setShowMenuMB(true)}>
           <AiOutlineMenu size={30} />
         </div>
-        <div className='w-24'>
-          <img src="https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/logo.png" alt="" width={170} />
-        </div>
+        <a href="/" >
+          <div className='w-36'>
+            <img src="https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/logo.png" alt="" width={200} />
+          </div>
+        </a>
       </div>
 
       {/* menu right */}

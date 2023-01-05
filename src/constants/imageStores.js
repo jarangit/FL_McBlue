@@ -36,4 +36,5 @@ export const IMAGE_STORE = {
   menuGiftIcon:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/03/tab_promotion-1.png`,
   menuUserIcon:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/03/ic-menu-register.png`,
   midIconMenuMB:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/3123.png`,
+  promotion_item_of_page:`https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/benner-3-1.png`,
 }
