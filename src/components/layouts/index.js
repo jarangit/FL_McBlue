@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
         <div className={`${styled.fullWidth}  pt-[120px]`}>
           <Banner />
         </div>
-        <div className='myContainerTop md:pl-[220px] hidden md:block'>
+        <div className='myContainerTop md:pl-[300px] hidden md:block  lg:pr-24'>
           {children}
         </div>
         <div className='myContainerTop md:pl-[200px] md:hidden '>
