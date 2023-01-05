@@ -46,11 +46,11 @@ const Layout = ({ children }) => {
           {children}
         </div>
         <div className='myContainerTop md:pl-[200px] md:hidden '>
-          <div className='grid grid-cols-3 gap-2'>
-            <div className=''>
+          <div className='grid grid-cols-3 '>
+            <div className='relative -left-3  '>
               <SideMenuMB />
             </div>
-            <div className='col-span-2'>
+            <div className='col-span-2 '>
               <div className='myContainerTop md:pl-[200px] !px-0'>
                 {children}
               </div>
