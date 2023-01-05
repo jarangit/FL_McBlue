@@ -57,11 +57,11 @@ const Menu = ({ setShowMenuMB }) => {
           </div>
         </div>
         <div>
-          <button className={`my_but_blue_light !p-1 !rounded-lg !text-xs md:text-md`}>เข้าสู่ระบบ</button>
+          <button className={`my_but_blue_light !p-1 !rounded-lg !text-xs md:text-md lg:h-10   lg:!px-3`}>เข้าสู่ระบบ</button>
         </div>
 
         <div>
-          <button className={`my_but_orange !p-1 !rounded-lg !text-xs md:text-md`}>สมัครสมาชิก</button>
+          <button className={`my_but_orange !p-1 !rounded-lg !text-xs md:text-md lg:h-10   lg:!px-3`}>สมัครสมาชิก</button>
         </div>
       </div>
     </div>
