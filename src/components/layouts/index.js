@@ -42,15 +42,15 @@ const Layout = ({ children }) => {
         <div className={`${styled.fullWidth}  pt-[120px]`}>
           <Banner />
         </div>
-        <div className='myContainerTop md:pl-[220px] hidden md:block'>
+        <div className='myContainerTop md:pl-[300px] hidden md:block  lg:pr-24'>
           {children}
         </div>
         <div className='myContainerTop md:pl-[200px] md:hidden '>
-          <div className='grid grid-cols-3 gap-2'>
-            <div className=''>
+          <div className='flex'>
+            <div className='relative -left-3 col-span-2  md:col-span-1 min-w-[110px]'>
               <SideMenuMB />
             </div>
-            <div className='col-span-2'>
+            <div className=''>
               <div className='myContainerTop md:pl-[200px] !px-0'>
                 {children}
               </div>

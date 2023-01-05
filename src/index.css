@@ -128,6 +128,15 @@ body {
   );
   transition: 0.3s;
 }
+.my_bg_blue_card_mb {
+  background: radial-gradient(
+    100% 100% at 50% 0,
+    #3170d1 0,
+    #3035cd 44%,
+    #1623ab 100%
+  );
+  transition: 0.3s;
+}
 .my_bg_blue_card:hover {
   background: radial-gradient(
     100% 100% at 50% 0,
@@ -238,8 +247,8 @@ body {
   /* border:solid 1px #00cccc; */
   text-align: center;
   padding: 30px;
-  width: 120px;
-  height: 100px;
+  width: 88px;
+  height: 90px;
 }
 .transparent-container {
   color: #ffffff;
@@ -341,3 +350,8 @@ li.slick-active {
 .slick-dots{
   transition: all;
 }
+
+.item_wrapper:hover  {
+  text-shadow: 0 0 5px white, 0 0 15px white, 0 0 35px white, 0 0 45px white;
+}
+
