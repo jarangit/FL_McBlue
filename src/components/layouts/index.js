@@ -22,14 +22,17 @@ const Layout = ({ children }) => {
   const styled = {
     fullWidth: `
     ml-0 md:pl-[200px] w-full max-w-[1620px]
-    `
+    `,
+    container_desk:`myContainerTop  md:pl-[28%] lg:pl-[20%] hidden md:block  lg:pr-24`,
+    container_mb:`myContainerTop md:pl-[200px] md:hidden`,
+    side_menu:`relative -left-4 col-span-2  md:col-span-1 min-w-[110px]`
   }
   useEffect(() => {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
     }, 2000);
-  }, [showMenuMB])
+  }, [])
   const [loading, setLoading] = useState(false)
 
 
@@ -44,12 +47,12 @@ const Layout = ({ children }) => {
         <div className={`${styled.fullWidth}  pt-[120px]`}>
           <Banner />
         </div>
-        <div className='myContainerTop  md:pl-[28%] lg:pl-[20%] hidden md:block  lg:pr-24'>
+        <div className={`${styled.container_desk}`}>
           {children}
         </div>
-        <div className='myContainerTop md:pl-[200px] md:hidden '>
+        <div className={`${styled.container_mb}`}>
           <div className='flex'>
-            <div className='relative -left-4 col-span-2  md:col-span-1 min-w-[110px]'>
+            <div className={`${styled.side_menu}`}>
               <SideMenuMB />
             </div>
             <div className=''>

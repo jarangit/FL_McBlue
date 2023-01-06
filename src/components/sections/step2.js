@@ -3,7 +3,7 @@ import { IMAGE_STORE } from '../../constants/imageStores'
 
 const Step2Section = () => {
   return (
-    <div className='bg-[url(https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/Artboard-3.jpg)] bg-cover bg-center bg-no-repeat relative'>
+    <div className='bg-[url(/public/img/bg_3.jpeg)] bg-cover bg-center bg-no-repeat relative'>
       <div className='my_gold_line' />
 
       <div className='myContainer'>

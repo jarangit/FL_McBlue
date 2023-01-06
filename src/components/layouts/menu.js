@@ -1,23 +1,28 @@
 import React, { useState, useEffect } from 'react'
 import { FaUserAlt, FaLock } from 'react-icons/fa'
 import { AiOutlineMenu } from 'react-icons/ai'
+import { IMAGE_STORE } from '../../constants/imageStores'
 const Menu = ({ setShowMenuMB, setShowModalLogin }) => {
   const [showCardMenu, setShowCardMenu] = useState(false)
-
+  const styled = {
+    root: `h-[75px] my_bg_blue drop-shadow-xl flex items-center justify-between px-3 md:px-6 fixed w-full z-50`,
+    but: `!py-0 !rounded-lg !text-xs md:text-md h-8 lg:!h-10 !px-2 lg:!px-3
+    !py-0 !rounded-lg !text-xs md:text-md h-8 lg:!h-10 !px-2 lg:!px-3`
+  }
   useEffect(() => {
     setTimeout(() => {
       setShowCardMenu(true)
     }, 300);
   }, [])
   return (
-    <div className={`h-[75px] my_bg_blue drop-shadow-xl flex items-center justify-between px-3 md:px-6 fixed w-full z-50`}>
+    <div className={`${styled.root}`}>
       <div className='flex gap-2 items-center'>
         <div className='md:hidden' onClick={() => setShowMenuMB(true)}>
           <AiOutlineMenu size={30} />
         </div>
         <a href="/" >
           <div className='w-36'>
-            <img src="https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/logo.png" alt="" width={200} />
+            <img src={IMAGE_STORE.logo} alt="" width={200} />
           </div>
         </a>
       </div>
@@ -27,19 +32,19 @@ const Menu = ({ setShowMenuMB, setShowModalLogin }) => {
         <div className={`hidden lg:flex gap-2  relative overflow-hidden transition-all duration-700  ${showCardMenu ? "top-0" : "-top-24"}`}>
           <div className={`my_card_blue`}>
             <div className=' mx-auto'>
-              <img src="https://ideabet.org/theme/mcblue/wp-content/uploads/2022/03/download-1.png" alt="" width={45} />
+              <img src={IMAGE_STORE.top_menu1} alt="" width={45} />
             </div>
             <div>โปรโมชั่น</div>
           </div>
           <div className={`my_card_blue`}>
             <div className=' mx-auto'>
-              <img src="https://ideabet.org/theme/mcblue/wp-content/uploads/2022/04/menu-hot-ic2.png" alt="" width={45} />
+              <img src={IMAGE_STORE.top_menu2} alt="" width={45} />
             </div>
             <div>บทความ</div>
           </div>
           <div className={`my_card_blue`}>
             <div className=' mx-auto'>
-              <img src="https://ideabet.org/theme/mcblue/wp-content/uploads/2021/07/line.png" alt="" width={45} />
+              <img src={IMAGE_STORE.lineIcon} alt="" width={45} />
             </div>
             <div>ติดต่อเรา</div>
           </div>
@@ -57,11 +62,11 @@ const Menu = ({ setShowMenuMB, setShowModalLogin }) => {
           </div>
         </div>
         <div>
-          <button className={`my_but_blue_light !py-0 !rounded-lg !text-xs md:text-md h-8 lg:!h-10 !px-2 lg:!px-3`} onClick={() => setShowModalLogin(true)}>เข้าสู่ระบบ</button>
+          <button className={`my_but_blue_light ${styled.but}`} onClick={() => setShowModalLogin(true)}>เข้าสู่ระบบ</button>
         </div>
 
         <div>
-          <button className={`my_but_orange !py-0 !rounded-lg !text-xs md:text-md h-8 lg:!h-10 !px-2 lg:!px-3`}>สมัครสมาชิก</button>
+          <button className={`my_but_orange ${styled.but}`}>สมัครสมาชิก</button>
         </div>
       </div>
     </div>

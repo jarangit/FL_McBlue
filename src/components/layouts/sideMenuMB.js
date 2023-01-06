@@ -38,10 +38,6 @@ const SideMenuMB = () => {
           </div>
         ))}
       </div>
-
-      {/* <div className='absolute bottom-6 mx-auto '>
-        <img src={IMAGE_STORE.lineContact} alt="" width={150} />
-      </div> */}
     </div>
   )
 }

@@ -2,8 +2,11 @@ import React from 'react'
 import { IMAGE_STORE } from '../../constants/imageStores'
 
 const StepSection = () => {
+  const styled = {
+    item:`border-2 border-blue-light my_bg_navy flex flex-col gap-3 justify-center text-center items-center  px-1 py-3 rounded-2xl max-w-full lg:max-w-[300px]`
+  }
   return (
-    <div className={`bg-[url('https://ideabet.org/theme/mcblue/wp-content/uploads/2022/08/bg-33.jpg')] bg-cover w-full py-10 relative`}>
+    <div className={`bg-[url('/public/img/bg_dagon.jpeg')] bg-cover w-full py-10 relative`}>
       <div className='my_gold_line'/>
       <div className={`flex flex-col gap-3 justify-center items-center text-center w-full px-3 lg:w-2/3  mx-auto`}>
         <div>
@@ -18,7 +21,7 @@ const StepSection = () => {
         <div>
           <div className=' text-2xl lg:text-3xl font-bold'>ขั้นตอนการสมัคร NameWeb</div>
           <div className={`grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6 justify-center items-center text-center`}>
-            <div className='border-2 border-blue-light my_bg_navy flex flex-col gap-3 justify-center text-center items-center  px-1 py-3 rounded-2xl max-w-full lg:max-w-[300px]'>
+            <div className={`${styled.item}`}>
               <div>
                 <img src={IMAGE_STORE.logo} alt="" width={200} />
               </div>
@@ -33,7 +36,7 @@ const StepSection = () => {
                 <img src={IMAGE_STORE.step_button} alt="" width={500} />
               </div>
             </div>
-            <div className='border-2 border-blue-light my_bg_navy flex flex-col gap-3 justify-center text-center items-center  px-1 py-3 rounded-2xl max-w-full lg:max-w-[300px]'>
+            <div className={`${styled.item}`}>
               <div>
                 <img src={IMAGE_STORE.logo} alt="" width={200} />
               </div>
@@ -48,7 +51,7 @@ const StepSection = () => {
                 <img src={IMAGE_STORE.step_button} alt="" width={500} />
               </div>
             </div>
-            <div className='border-2 border-blue-light my_bg_navy flex flex-col gap-3 justify-center text-center items-center  px-1 py-3 rounded-2xl max-w-full lg:max-w-[300px]'>
+            <div className={`${styled.item}`}>
               <div>
                 <img src={IMAGE_STORE.logo} alt="" width={200} />
               </div>
