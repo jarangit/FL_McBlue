@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import React from 'react'
 import { IMAGE_STORE } from '../../constants/imageStores'
 
 const BottomMenu = () => {
