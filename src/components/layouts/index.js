@@ -15,8 +15,10 @@ import Question from '../sections/question'
 import Sponsor from '../sections/sponsor'
 import SideMenuMB from './sideMenuMB'
 import Loading from '../items/loading'
+import LoginModal from '../modal/loginModal'
 const Layout = ({ children }) => {
   const [showMenuMB, setShowMenuMB] = useState(false)
+  const [showModalLogin, setShowModalLogin] = useState(false)
   const styled = {
     fullWidth: `
     ml-0 md:pl-[200px] w-full max-w-[1620px]
@@ -35,7 +37,7 @@ const Layout = ({ children }) => {
     <div className='my_bg_image'>
       {loading && <Loading />}
       <MenuModal show={showMenuMB} onClose={setShowMenuMB} />
-      <Menu setShowMenuMB={setShowMenuMB} />
+      <Menu setShowMenuMB={setShowMenuMB} setShowModalLogin ={setShowModalLogin}/>
       <SideMenu />
       <TextSlide />
       <div>
@@ -47,7 +49,7 @@ const Layout = ({ children }) => {
         </div>
         <div className='myContainerTop md:pl-[200px] md:hidden '>
           <div className='flex'>
-            <div className='relative -left-3 col-span-2  md:col-span-1 min-w-[110px]'>
+            <div className='relative -left-4 col-span-2  md:col-span-1 min-w-[110px]'>
               <SideMenuMB />
             </div>
             <div className=''>
@@ -69,6 +71,9 @@ const Layout = ({ children }) => {
       </div>
       <Footer />
       <BottomMenu />
+
+      {/* modal zone */}
+      <LoginModal open={showModalLogin} handleClose={setShowModalLogin} />
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FaUserAlt, FaLock } from 'react-icons/fa'
 import { AiOutlineMenu } from 'react-icons/ai'
-const Menu = ({ setShowMenuMB }) => {
+const Menu = ({ setShowMenuMB, setShowModalLogin }) => {
   const [showCardMenu, setShowCardMenu] = useState(false)
 
   useEffect(() => {
@@ -57,7 +57,7 @@ const Menu = ({ setShowMenuMB }) => {
           </div>
         </div>
         <div>
-          <button className={`my_but_blue_light !py-0 !rounded-lg !text-xs md:text-md h-8 lg:!h-10 !px-2 lg:!px-3`}>เข้าสู่ระบบ</button>
+          <button className={`my_but_blue_light !py-0 !rounded-lg !text-xs md:text-md h-8 lg:!h-10 !px-2 lg:!px-3`} onClick={() => setShowModalLogin(true)}>เข้าสู่ระบบ</button>
         </div>
 
         <div>
