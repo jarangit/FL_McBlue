@@ -37,14 +37,14 @@ const LoginModal = ({ handleClose, open, onSubmit }) => {
         >
           <motion.div
             onClick={(e) => e.stopPropagation()}
-            className=" bg-gradient-to-r from-[#3250a1] to-[#030e49cc] max-w-[500px] w-full h-fit p-8 rounded-2xl drop-shadow-lg"
+            className=" bg-gradient-to-r from-[#3250a1] to-[#030e49cc] max-w-[500px] w-full h-fit p-4 rounded-2xl drop-shadow-lg"
             variants={dropIn}
             initial="hidden"
             animate="visible"
             exit="hidden"
           >
             <div className='flex flex-col items-center gap-4 relative'>
-              <div className={`absolute -top-10 -right-10 text-white bg-red rounded-full cursor-pointer `} onClick={() => handleClose(false)}>
+              <div className={`absolute -top-6 -right-4 text-white bg-red rounded-full cursor-pointer `} onClick={() => handleClose(false)}>
                 <IoIosClose size={30} />
               </div>
               <div>
@@ -58,7 +58,7 @@ const LoginModal = ({ handleClose, open, onSubmit }) => {
                 </form>
               </div>
               <button className='bg-gradient-to-r from-[#fdd826] to-[#fdb311] h-14 px-6 text-white rounded-lg w-full' onClick={() => handleClose(false)}>เข้าสู่ระบบ</button>
-              <div className='flex justify-between w-full'>
+              <div className='flex justify-center md:justify-between w-full flex-wrap'>
                 <div>
                   ท่านยังไม่มีบัญชี?
                   <span className='underline ml-2'>สมัครสมาชิก</span>
