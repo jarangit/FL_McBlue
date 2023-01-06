@@ -36,6 +36,9 @@ module.exports = {
       "white": {
         DEFAULT: "#ffff",
       },
+      "red": {
+        DEFAULT: "#ff4c4c",
+      },
     }
   },
   plugins: [],
