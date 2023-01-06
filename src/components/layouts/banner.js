@@ -6,7 +6,7 @@ const Banner = () => {
 
   const styled = {
     imageItem: `
-      mx-auto flex justify-center  rounded-md lg:rounded-2xl overflow-hidden  h-[120px] lg:h-[230px] max-w-[650px]
+      mx-auto flex justify-center  rounded-md lg:rounded-2xl overflow-hidden  h-[120px] md:h-[180px] lg:h-[230px] max-w-[650px] w-full
     `,
     boxImage: `
       px-3
@@ -16,7 +16,7 @@ const Banner = () => {
     const { onClick } = props;
     return (
       <div
-        className="slick-arrow absolute top-10 lg:top-20  right-5 drop-shadow-lg cursor-pointer"
+        className="slick-arrow absolute top-10 md:top-20  right-5 drop-shadow-lg cursor-pointer"
         onClick={onClick}
       >
         <IoIosArrowForward size={40} />
@@ -28,7 +28,7 @@ const Banner = () => {
     const { onClick } = props;
     return (
       <div
-        className="slick-arrow absolute top-10 lg:top-20 left-5 drop-shadow-lg z-10 cursor-pointer"
+        className="slick-arrow absolute top-10 md:top-20 left-5 drop-shadow-lg z-10 cursor-pointer"
         onClick={onClick}
       >
         <IoIosArrowBack size={40} />
@@ -40,7 +40,7 @@ const Banner = () => {
     className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "350px",
+    centerPadding: "25%",
     slidesToShow: 1,
     speed: 500,
     lazyLoad: true,
@@ -61,7 +61,7 @@ const Banner = () => {
         settings: {
           slidesToShow: 1,
           dots: true,
-          centerPadding: "250px",
+          centerPadding: "20%",
         }
       },
       {
@@ -69,7 +69,7 @@ const Banner = () => {
         settings: {
           slidesToShow: 1,
           dots: false,
-          centerPadding: "150px",
+          centerPadding: "20%",
         }
       },
       {
@@ -77,22 +77,31 @@ const Banner = () => {
         settings: {
           slidesToShow: 1,
           dots: false,
-          centerPadding: "100px",
+          centerPadding: "20%",
 
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 900,
         settings: {
           slidesToShow: 1,
-          centerPadding: "100px",
+          dots: false,
+          centerPadding: "7%",
+
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "30%",
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          centerPadding: "40px",
+          centerPadding: "10%",
         }
       }
     ]
