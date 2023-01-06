@@ -58,7 +58,7 @@ const LoginModal = ({ handleClose, open, onSubmit }) => {
                 </form>
               </div>
               <button className='bg-gradient-to-r from-[#fdd826] to-[#fdb311] h-14 px-6 text-white rounded-lg w-full' onClick={() => handleClose(false)}>เข้าสู่ระบบ</button>
-              <div className='flex justify-center md:justify-between w-full flex-wrap'>
+              <div className='flex justify-center md:justify-between w-full flex-wrap flex-col items-center md:flex-row'>
                 <div>
                   ท่านยังไม่มีบัญชี?
                   <span className='underline ml-2'>สมัครสมาชิก</span>
