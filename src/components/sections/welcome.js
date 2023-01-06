@@ -27,7 +27,7 @@ const Welcome = () => {
           <img src={IMAGE_STORE.women} alt="" />
         </div>
         <div className='col-span-1 lg:col-span-2 border-4 border-blue rounded-3xl overflow-hidden'>
-          <video loop autoplay="" muted className='rounded-3xl'>
+          <video loop autoplay muted className='rounded-3xl'>
             <source src={VIDEO_STORE.welcome} type="video/mp4" />
           </video>
         </div>

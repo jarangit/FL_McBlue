@@ -19,6 +19,21 @@ import LoginModal from '../modal/loginModal'
 const Layout = ({ children }) => {
   const [showMenuMB, setShowMenuMB] = useState(false)
   const [showModalLogin, setShowModalLogin] = useState(false)
+  const [dataForm, setDataForm] = useState({
+    username: '',
+    password: '',
+  })
+ 
+  const onChangeDataForm = (e) => {
+    setDataForm({
+      ...dataForm,
+      [e.target.name]: e.target.value
+    })
+  }
+
+  const onSubmit = () => {
+    console.log(dataForm)
+  }
   const styled = {
     fullWidth: `
     ml-0 md:pl-[200px] w-full max-w-[1620px]
@@ -39,8 +54,8 @@ const Layout = ({ children }) => {
   return (
     <div className='my_bg_image'>
       {loading && <Loading />}
-      <MenuModal show={showMenuMB} onClose={setShowMenuMB} />
-      <Menu setShowMenuMB={setShowMenuMB} setShowModalLogin ={setShowModalLogin}/>
+      <MenuModal show={showMenuMB} onClose={setShowMenuMB}  />
+      <Menu setShowMenuMB={setShowMenuMB} setShowModalLogin ={setShowModalLogin} onChangeDataForm ={onChangeDataForm} onSubmit={onSubmit}/>
       <SideMenu />
       <TextSlide />
       <div>
@@ -76,7 +91,7 @@ const Layout = ({ children }) => {
       <BottomMenu />
 
       {/* modal zone */}
-      <LoginModal open={showModalLogin} handleClose={setShowModalLogin} />
+      <LoginModal open={showModalLogin} handleClose={setShowModalLogin} onChangeDataForm ={onChangeDataForm} onSubmit={onSubmit} />
     </div>
   )
 }

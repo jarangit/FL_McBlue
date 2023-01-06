@@ -50,7 +50,6 @@ const Banner = () => {
     prevArrow: <SamplePrevArrow />,
     adaptiveHeight: true,
     customPaging: function(i) {
-      console.log(i)
       return (
         <div className='w-2 h-2 bg-[#9cb1eb] rounded-full mt-1 opacity-25 transition-all'/>
       );

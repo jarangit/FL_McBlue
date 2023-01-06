@@ -27,7 +27,7 @@ const dropIn = {
   },
 };
 
-const LoginModal = ({ handleClose, open, onSubmit }) => {
+const LoginModal = ({ handleClose, open, onSubmit, onChangeDataForm }) => {
   const styled = {
     motion: `bg-gradient-to-r from-[#3250a1] to-[#030e49cc] max-w-[500px] w-full h-fit p-4 rounded-2xl drop-shadow-lg`,
     input: `outline-none bg-[#00000085] p-2 rounded-lg w-full drop-shadow-2xl border-2  border-white/30`,
@@ -57,12 +57,12 @@ const LoginModal = ({ handleClose, open, onSubmit }) => {
               </div>
               <div className='font-bold text-xl'>เข้าสู่ระบบ</div>
               <div className='w-full'>
-                <form action="" className='flex flex-col gap-4 w-full'>
-                  <input type="text" placeholder='UserName' className={`${styled.input}`} />
-                  <input type="text" placeholder='รหัสผ่าน' className={`${styled.input}`} />
+                <form action="" className='flex flex-col gap-4 w-full' onChange={(e) => onChangeDataForm(e)}>
+                  <input type="text" placeholder='UserName' className={`${styled.input}`} name ="username"/>
+                  <input type="password" placeholder='รหัสผ่าน' className={`${styled.input}`} name ="password"/>
                 </form>
               </div>
-              <button className={`${styled.but_yellow}`} onClick={() => handleClose(false)}>เข้าสู่ระบบ</button>
+              <button className={`${styled.but_yellow}`} onClick={onSubmit}>เข้าสู่ระบบ</button>
               <div className='flex justify-center md:justify-between w-full flex-wrap flex-col items-center md:flex-row'>
                 <div>
                   ท่านยังไม่มีบัญชี?

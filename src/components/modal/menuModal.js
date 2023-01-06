@@ -3,7 +3,7 @@ import { IMAGE_STORE } from '../../constants/imageStores';
 
 // const safeDocument = typeof document !== 'undefined' ? document : {};
 
-const MenuModal = ({ onClose, show }) => {
+const MenuModal = ({ onClose, show}) => {
   const [showCardMenu, setShowCardMenu] = useState(false)
   const styled = {
     root: `fixed h-screen z-[99] w-full backdrop-sepia-0 bg-white/70 md:hidden overflow-hidden transition-all`,
